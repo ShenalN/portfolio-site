@@ -51,10 +51,10 @@ function sendEmail() {
   const name = document.querySelector("#name").value;
   
   Email.send({
-    Host: 'smtp.elasticemail.com',
-   //Host: 'smtp.gmail.com',
+    //Host: 'smtp.elasticemail.com',
+    Host: 'smtp.gmail.com',
     Username: '123blackflash@gmail.com',
-    Password:  '9C59266CF8E0894C711B31554D3F1B19F2B6',
+    Password:  'shenal123!',
     To: 'inokasujivani7@gmail.com',
     From: email,
     Subject: 'New contact form inquery',
