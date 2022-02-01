@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Shenal Nimsara | Portfolio</title>
+   
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="mobileView.css">
+</head>
+
+<body>
+  
+    <div class="menu">
+      <div class="menu-box">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+  <nav>
+    <ul>
+      <li><i class="fa fa-user"></i>
+      <a href="">About</a></li>
+      <li><i class="fa fa-fire"></i>
+      <a href="">Skills</a></li>
+      <li><i class="fa fa-laptop"></i>
+      <a href="">Projects</a></li>
+      <li><i class="fa fa-phone"></i>
+      <a href="">Contact Me</a></li>
+    </ul>
+  </nav>
+  
+  <header>
+    <h2 class="header">I'm</h2>
+    <div class="text-box">
+      <h1>Shenal Nimsara</h1>
+      <h1>Programmer</h1>
+      <h1>Web Developer</h1>
+      <h1>Graphics Designer</h1>
+      
+    </div>
+  </header>
+  
+  <div class="about">
+    <div class="aboutheader" >
+      <h1>Few About Me</h1>
+
+    </div>
+          <p class="aboutP">I am Shenal Nimsara.I am a programmer.I am a web devoloper.I am a graphics designer.I am a student.I am studying in Ananda College.</p>
+  </div>
+  
+  <div class="skills">
+    <div class="aboutheader"><h1>My Skills</h1></div>
+    <ul class="skill-presentage">
+      <li>
+        <h1>html</h1>
+        <div class="pr" style="--i: '60%';--v: 60%"></div>
+      </li>
+      <li>
+        <h1>css</h1>
+        <div class="pr" style="--i: '50%';--v: 50%"></div>
+      </li>
+      <li>
+        <h1>javascript</h1>
+        <div class="pr" style="--i: '45%';--v: 45%"></div>
+      </li>
+      <li>
+        <h1>python</h1>
+        <div class="pr" style="--i: '15%';--v: 15%"></div>
+      </li>
+      <li>
+        <h1>C++</h1>
+        <div class="pr" style="--i: '10%';--v: 10%"></div>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="projects">
+    <h1 class="h1">My projects</h1>
+    <ul>
+      <li>
+        <div class="img">
+          <h1>Simple password generator</h1>
+          <p>Password generator build by me...</p>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <h1>Javascript Image Slider</h1>
+          <p>Image slider build only using css and javascript...</p>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <h1>Search Box</h1>
+          <p>working searchbox for searching in internet.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+    <div class="contact-me">
+      <h1 class="h1">Contact Me</h1>
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <input type="text" placeholder="Enter Your Name" id="name" required>
+        <input type="email" placeholder="Enter Your Email" id="email" required>
+        <textarea id="message" rows="8" cols="40" required placeholder="Type Your message here..."></textarea>
+        <input type="submit" value="Send" id="send">
+      </form>
+    </div>
+  
+  
+  <script src="main.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js" defer>
+  </script>
+</body>
+</html>

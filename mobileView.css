@@ -1,0 +1,185 @@
+/*mobile view*/
+
+@media only screen and (max-width: 800px){
+ 
+.menu { 
+  margin: 20px;
+  width: 70px;
+  height: 70px;
+}
+
+.menu .menu-box {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+
+.menu .menu-box span {
+  height: 7px;
+}
+
+.menu-box span:nth-child(1) {
+ top: 10px;
+}
+
+.menu-box span:nth-child(2) {
+  top: 30px;
+}
+
+.menu-box span:nth-child(3) {
+  top: 50px;
+}
+
+.menu-box.active span:nth-child(1) {
+  transform: rotate(45deg) translateX(13px) translateY(15px);
+}
+
+.menu-box.active span:nth-child(2) {
+  width: 0;
+  transform: translateX(20px);
+}
+
+.menu-box.active span:nth-child(3) {
+  transform: rotate(-45deg) translateX(13px) translateY(-15px);
+}
+
+/*Navigation bar*/
+
+nav ul li {
+  padding: 30px 30px;
+}
+
+nav ul li{
+  font-size: 20px;
+ 
+}
+
+header {
+  height: 360px;
+}
+
+header .header {
+  font-size: 4rem;
+}
+
+header .text-box h1{
+  font-size: 30px;
+}
+
+header .text-box h1 {
+  width: 300px;
+  height: 100px;
+}
+
+header .text-box {
+  width: 300px;
+  height: 100px;
+}
+
+
+header .text-box h1:nth-child(1) {
+  transform: translateZ(150px);
+  z-index: 9;
+ 
+}
+
+header .text-box h1:nth-child(2) {
+  transform: rotateY(180deg) translateZ(150px);
+  z-index: 9;
+}
+
+header .text-box h1:nth-child(3) {
+  transform: rotateY(90deg) translateZ(150px);
+  z-index: 9;
+ 
+}
+
+header .text-box h1:nth-child(4) {
+  transform: rotateY(90deg) rotateY(180deg) translateZ(150px) ;
+  z-index: 9;
+  
+}
+
+.about{
+  margin-top: 15px;
+}
+
+.aboutheader h1{
+  font-size: 30px;
+}
+
+.aboutheader {
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  background: white;
+  font-size: 2.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.aboutheader h1{
+  font-family: 'Dongle',sans-serif;
+  color: black;
+}
+
+
+.aboutheader {
+  transform: translateX(0%);
+  opacity: 0;
+  transition: 2s;
+}
+
+.aboutheader.active {
+  transform: translateX(30%);
+  opacity: 1;
+}
+
+.about p{
+  transition: 2s;
+  font-family: 'Dongle', sans-serif;
+  font-size: 25px;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 50px;
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.about p.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.skill-presentage li .pr {
+  height: 20px;
+}
+.skill-presentage li .pr::before {
+  font-size: 16px;
+}
+
+.skill-presentage li h1 {
+  font-size: 30px;
+}
+
+.projects ul {
+  flex-direction: column;
+}
+
+.projects ul li {
+  margin: 20px auto;
+}
+
+.contact-me form input, .contact-me form textarea{
+  width: 75vw;
+}
+
+
+
+
+
+}
