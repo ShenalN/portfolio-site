@@ -397,14 +397,14 @@ header .text-box h1:nth-child(4) {
 }
 
 .projects ul li .card-1::before {
-   background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/password.jpg);
+   background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(password.jpg);
    -webkit-background-size: cover;
    background-size: cover;
    
  }
  
 .projects ul li .card-2::before{
-   background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("images/js.png");
+   background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("js.png");
    content: "still in maintenance!";
    font-size: 25px;
    font-weight: 900;
