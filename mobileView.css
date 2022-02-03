@@ -178,6 +178,23 @@ header .text-box h1:nth-child(4) {
   width: 75vw;
 }
 
+footer label h2,footer label i{
+  font-size: 16px;
+}
+
+footer label i{
+  font-size: 25px;
+  transform: translateY(5px);
+}
+
+.p{
+  font-size: 13px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
 
 
 

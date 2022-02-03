@@ -2,6 +2,8 @@ const menu = document.querySelector(".menu-box");
 const sideBar = document.querySelector("nav");
 const box = document.querySelectorAll(".aboutheader");
 const aboutP = document.querySelector(".aboutP");
+const navClick = document.querySelectorAll(".navClick");
+
 
 
 menu.onclick = () => {
@@ -51,18 +53,40 @@ function sendEmail() {
   const name = document.querySelector("#name").value;
   
   Email.send({
-    //Host: 'smtp.elasticemail.com',
-    Host: 'smtp.gmail.com',
+    Host: 'smtp.elasticemail.com',
     Username: '123blackflash@gmail.com',
-    Password:  'shenal123!',
+    Password: 'D3956FB35D062BD2B2BEDAEC42B9169C6D91',
     To: 'inokasujivani7@gmail.com',
-    From: email,
-    Subject: 'New contact form inquery',
-    Body: "Name :" + name + "<br><br>" +
-           "Email :" + email + "<br><br>" +
-           "Message :" + message
+    From: '123blackflash@gmail.com',
+    Subject: 'Portfolio Contact Form Inquery',
+    Body: "Name : " + name + "<br><br>" +
+           "Email : " + email + "<br><br>" +
+           "Message : " + message
   }).then(
-    message => alert(message)
+    message => alert(message + ".Email sent successfully!")
   );
 
 }
+
+for(i of navClick) {
+  i.addEventListener("click" , () => {
+    menu.classList.remove("active");
+    sideBar.classList.remove("active");
+  })
+}
+
+const end = document.querySelector(".end");
+
+var date = new Date();
+
+var year = date.getFullYear();
+
+console.log(year);
+
+end.innerHTML = `<p class="p">Created By Shenal Nimsara ${year} <i class="far fa-copyright" ></i> All rights reserved.</p>`;
+
+
+window.addEventListener("scroll" , () => {
+  sideBar.classList.remove("active");
+  menu.classList.remove("active");
+})

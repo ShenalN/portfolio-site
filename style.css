@@ -9,6 +9,7 @@
   box-sizing: border-box;
   color: #fff;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -102,7 +103,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-  background: #FFFFFF73;
+  background: rgba(255,255,255,0.3);
 }
 
 nav ul li{
@@ -381,7 +382,7 @@ header .text-box h1:nth-child(4) {
   border: 2px solid white;
 }
 
-.projects ul li h1::before
+.projects ul li .img::before
 {
   content: "";
   position: absolute;
@@ -395,7 +396,38 @@ header .text-box h1:nth-child(4) {
   transition: .5s;
 }
 
-.projects ul li:hover h1::before {
+.projects ul li .card-1::before {
+   background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/password.jpg);
+   -webkit-background-size: cover;
+   background-size: cover;
+   
+ }
+ 
+.projects ul li .card-2::before{
+   background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("images/js.png");
+   content: "still in maintenance!";
+   font-size: 25px;
+   font-weight: 900;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   -webkit-background-size: cover;
+   background-size: cover;
+   background-position: center;
+ }
+ 
+ .projects ul li .card-3::before{
+   background: yellow;
+   color: #000;
+   content: "still in maintenance!";
+   font-size: 25px;
+   font-weight: 900;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+.projects ul li:hover .img::before {
   top: 70%;
   opacity: 0.3;
   z-index: -2;
@@ -452,4 +484,46 @@ header .text-box h1:nth-child(4) {
   color: #000;
   font-family: sans-serif;
   margin-top: 30px;
+}
+
+
+/*footer*/
+
+footer {
+  margin-top: 100px;
+  width: 100vw;
+  overflow-x: hidden;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer label{
+  display: block;
+  margin: 30px auto;
+  width: 70vw;
+}
+
+footer label h2, label i{
+  font-size: 30px;
+  display: inline-block;
+}
+
+footer label i{
+  margin-right: 30px;
+}
+
+.p{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 100px;
+  background: red;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.p {
+  font-weight: 900;
 }
